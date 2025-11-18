@@ -1,6 +1,8 @@
 # ECommerce API
 
-A RESTful API built with **.NET 8**, **C#**, **Entity Framework Core**, and **FluentValidation** for managing products, customers, and orders in an e-commerce system.
+أكيد، ممكن نختصر الشرح في سطرين كده:
+
+**A RESTful API built with .NET 8, C#, Entity Framework Core, for managing products, customers, and orders in an e-commerce system. The project follows a clean architecture separating Domain, Application, Infrastructure, and API layers for scalability and maintainability.**
 
 ---
 
