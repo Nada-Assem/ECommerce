@@ -14,9 +14,4 @@
     <ProjectReference Include="..\ECommerce.Domain\ECommerce.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DTOs\OrderDTO\" />
-    <Folder Include="Validators\Customers\" />
-  </ItemGroup>
-
 </Project>

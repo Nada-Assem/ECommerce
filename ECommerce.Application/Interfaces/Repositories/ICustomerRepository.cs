@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Application.Interfaces.Repositories.CustomerRepository
+namespace ECommerce.Application.Interfaces.Repositories
 {
     public interface ICustomerRepository
     {

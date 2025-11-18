@@ -1,5 +1,5 @@
 
-using ECommerce.Application.Interfaces.Repositories.CustomerRepository;
+using ECommerce.Application.Interfaces.Repositories;
 using ECommerce.Application.Interfaces.Services;
 using ECommerce.Application.Services;
 using ECommerce.Infrastructure.Data;
@@ -20,8 +20,12 @@ namespace ECommerce.Api
                  options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+
             builder.Services.AddScoped<ICustomerService, CustomerService>();
-            builder.Services.AddControllers();
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
 
 
             builder.Services.AddControllers();

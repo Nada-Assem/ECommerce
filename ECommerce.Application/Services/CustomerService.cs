@@ -1,5 +1,5 @@
 ﻿using ECommerce.Application.DTOs.CustomerDTO;
-using ECommerce.Application.Interfaces.Repositories.CustomerRepository;
+using ECommerce.Application.Interfaces.Repositories;
 using ECommerce.Application.Interfaces.Services;
 using ECommerce.Domain.Entities;
 using System;
