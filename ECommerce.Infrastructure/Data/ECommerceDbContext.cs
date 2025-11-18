@@ -3,7 +3,7 @@ using ECommerce.Infrastructure.Data.Seed;
 using ECommerce.Infrastructure.Persistence.Configurations;
 using Microsoft.EntityFrameworkCore;
 
-namespace ECommerce.Infrastructure.Persistence
+namespace ECommerce.Infrastructure.Data
 {
     public class ECommerceDbContext : DbContext
     {

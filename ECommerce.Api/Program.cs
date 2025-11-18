@@ -1,7 +1,10 @@
 
-using ECommerce.Infrastructure.Persistence;
+using ECommerce.Application.Interfaces.Repositories.CustomerRepository;
+using ECommerce.Application.Interfaces.Services;
+using ECommerce.Application.Services;
+using ECommerce.Infrastructure.Data;
+using ECommerce.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System.Globalization;
 
 namespace ECommerce.Api
 {
@@ -15,6 +18,11 @@ namespace ECommerce.Api
             // Add services to the container.
             builder.Services.AddDbContext<ECommerceDbContext>(options =>
                  options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+            builder.Services.AddScoped<ICustomerService, CustomerService>();
+            builder.Services.AddControllers();
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
