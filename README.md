@@ -149,7 +149,7 @@ ECommerce.Application
 
 5. Open Package Manager Console and run migrations:
 
-```powershell
+```Package Manager Console
 PM> Add-Migration InitialCreate -Project ECommerce.Infrastructure -StartupProject ECommerce.Api
 PM> Update-Database -Project ECommerce.Infrastructure -StartupProject ECommerce.Api
 ```
