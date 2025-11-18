@@ -12,8 +12,6 @@ A RESTful API built with **.NET 8**, **C#**, **Entity Framework Core**, and **Fl
    - [Order Management](#order-management-api)
 4. [Sample JSON Requests](#sample-json-requests)
 5. [Setup Instructions](#setup-instructions)
-6. [Notes](#notes)
-
 ---
 
 ## Project Structure
